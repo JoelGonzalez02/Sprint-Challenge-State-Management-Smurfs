@@ -23,10 +23,26 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+
+It makes it very easy to pass down state and props to other components by using a context provider.
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+The store holds all of your application state in an immutable object.
+Actions are used to dispatch actions to the reducers that give information on what to do when a certain action is triggered on the ui. 
+The reducers take the information dispatched from the actions and use it to update the state of your application.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+The difference is that application state is global and component state is local. If you have a large application with various components that need the same pieces of state, then it would be best to use application state. If the state is only needed by a  few components then it would be ok to use component state.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+Redux-thunk is a piece of middleware that lets us call action creators that return a function instead of an action object. This allows us to dispatch something other than actions like an api get and post request. 
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+My favorite state manangement system is definitely Context-api. It's very simple and easy to understand how to pass your states and props to other components and takes very little time to implement into your projects.
 
 ## Project Set Up
 
